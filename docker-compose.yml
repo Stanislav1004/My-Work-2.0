@@ -1,0 +1,10 @@
+services:
+  web-app:
+    build: .
+    container_name: my-web-site
+    ports:
+      - "8080:80"
+    volumes:
+      - .:/usr/share/nginx/html
+      - ./default.conf:/etc/nginx/conf.d/default.conf
+    restart: unless-stopped
