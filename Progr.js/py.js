@@ -1,8 +1,7 @@
-
 let times = 0;
 let momi = setInterval(my_rou, 1000);
 function my_rou(){
-    document.getElementById("joji").innerHTML = "Python: " + times;
+    document.getElementById("joji").innerHTML = "Python.Time: " + times;
     times++;
 }
 
@@ -25,4 +24,3 @@ overlay.addEventListener('click', () => {
   overlay.classList.remove('active');
   document.body.classList.remove('noscroll');
 });
-

@@ -1,8 +1,7 @@
-
 let times = 0;
 let momi = setInterval(my_rou, 1000);
 function my_rou(){
-    document.getElementById("joji").innerHTML = "JavaScript: " + times;
+    document.getElementById("joji").innerHTML = "JavaScript.Time: " + times;
     times++;
 }
 
